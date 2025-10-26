@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Anirudh Challa — AI, Systems & Tools</title>
+  <meta name="description" content="Anirudh Challa — building systems, tooling, and writing about AI and reliability." />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧭</text></svg>">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/">anirudh-challa</a>
+
+      <button id="menu-toggle" class="hamburger" aria-label="Open menu">☰</button>
+
+      <nav class="nav" id="main-nav" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#writing">Writing</a>
+        <a href="#contact">Contact</a>
+        <button id="theme-toggle" class="btn-ghost" aria-label="Toggle theme">🌓</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-left">
+          <h1>Build fast, reliable systems — and write about what matters.</h1>
+          <p class="lead">I’m Anirudh — I design backend systems, developer tools, and practical AI integrations. I ship production services and write clear technical notes so others can learn faster.</p>
+          <p class="hero-cta">
+            <a class="btn" href="#projects">See projects</a>
+            <a class="btn btn-outline" href="#writing">Read writing</a>
+          </p>
+
+          <div class="quick-stats">
+            <div><strong>Open-source</strong><span>Rust, Go, JS</span></div>
+            <div><strong>Focus</strong><span>Reliability · Systems · AI</span></div>
+            <div><strong>Contact</strong><span><a href="mailto:you@example.com">you@example.com</a></span></div>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="glass-card">
+            <svg class="avatar" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Avatar">
+              <defs>
+                <linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#7c3aed"/><stop offset="1" stop-color="#06b6d4"/></linearGradient>
+              </defs>
+              <rect rx="16" width="100" height="100" fill="url(#g)"/>
+              <text x="50" y="58" fill="white" font-size="36" font-family="sans-serif" text-anchor="middle">AC</text>
+            </svg>
+            <h3>Anirudh Challa</h3>
+            <p class="muted">Software engineer · systems, tooling, and applied AI</p>
+            <div class="hero-actions">
+              <a class="btn small" href="https://github.com/anirudh-challa" target="_blank" rel="noopener">GitHub</a>
+              <a class="btn small btn-outline" href="#contact">Contact</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="container section about">
+      <h2>About</h2>
+      <p>I build backend services, scale systems, and ship developer tooling. Lately I’ve been exploring applied AI workloads and reliability patterns for distributed systems. I enjoy writing concise posts about architecture tradeoffs and practical engineering.</p>
+      <p>Quick links: <a href="#projects">projects</a> · <a href="#writing">writing</a> · <a href="#contact">contact</a></p>
+    </section>
+
+    <section id="projects" class="container section projects">
+      <h2>Selected projects</h2>
+      <div class="grid">
+        <article class="card">
+          <h3><a href="#">Project: fast-ingest</a></h3>
+          <p>High-throughput pipeline for streaming events, designed for low-latency writes and horizontal scale. Includes client libraries and deployment templates.</p>
+          <p class="card-meta">Go · gRPC · Kubernetes</p>
+        </article>
+
+        <article class="card">
+          <h3><a href="#">Project: toolbelt</a></h3>
+          <p>A set of small CLI tools that simplify developer workflows: release helpers, service scaffolding, and observability shortcuts.</p>
+          <p class="card-meta">Rust · CLI · Open-source</p>
+        </article>
+
+        <article class="card">
+          <h3><a href="#">Project: ai-ops</a></h3>
+          <p>Practical experiments integrating model inference with operational tooling to assist SRE workflows and incident response.</p>
+          <p class="card-meta">Python · ML · Integrations</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="writing" class="container section writing">
+      <h2>Writing</h2>
+      <ul class="posts">
+        <li><a href="#">Designing a low-latency ingestion service</a> <span class="muted">· Oct 2025</span></li>
+        <li><a href="#">Why observability aids faster debugging</a> <span class="muted">· Jul 2025</span></li>
+        <li><a href="#">Small improvements that improved reliability</a> <span class="muted">· Apr 2025</span></li>
+      </ul>
+      <p class="muted">Tip: convert this to an SSG (Eleventy, Hugo, Jekyll, Astro) to manage posts as markdown and get archives/tags.</p>
+    </section>
+
+    <section id="contact" class="container section contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
+      <p>GitHub: <a href="https://github.com/anirudh-challa">github.com/anirudh-challa</a> · Twitter: <a href="https://twitter.com/">@yourhandle</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Anirudh Challa — Built with HTML, CSS, and small JS.</p>
+      <p class="muted">Inspired by the design language of modern product landing pages.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
