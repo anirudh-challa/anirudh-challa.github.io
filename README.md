@@ -1,17 +1,10 @@
-# anirudh-challa.github.io — Single Page Portfolio
+# anirudh-challa.github.io — Single Page Portfolio (Fixed)
 
-Live URL: https://anirudh-challa.github.io/
-
-## Photo
-Replace `assets/images/anirudh.jpg` with your photo.
-
-## Technologies Logos
-- License-safe placeholders are bundled in `assets/logos/`.
-- To download official SVG brand marks locally, run:
-```bash
-bash fetch-logos.sh
-```
-(Requires `curl`.) The page also auto-falls back to the Simple Icons CDN if a local logo is missing.
+- Descending timeline (latest → earliest)
+- Every technology includes a local placeholder icon and CDN fallback
+- Removed the extra "Technologies" CTA next to LinkedIn
+- Contact section stacked: Email, GitHub, LinkedIn (stable order)
+- Add your photo at `assets/images/anirudh.jpg`
 
 ## Deploy
 ```bash
@@ -19,6 +12,6 @@ git init
 git branch -m main
 git remote add origin https://github.com/anirudh-challa/anirudh-challa.github.io.git
 git add .
-git commit -m "Portfolio single-page"
+git commit -m "Portfolio fixed layout"
 git push -u origin main
 ```

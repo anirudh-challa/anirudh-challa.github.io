@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -31,11 +30,10 @@
     <div>
       <h1>Anirudh Challa</h1>
       <h2>Machine Learning Engineer</h2>
-      <p>With eight years of hands-on experience as a passionate machine learning engineer, I am driven by an enduring curiosity to learn, improve, and work on the cutting edge of technology. My journey began in academia in 2013, and since then, I have contributed to impactful projects spanning deep learning, computer vision, natural language processing, and generative AI. I have worked across the entire workflow, from model development to deployment, always striving to keep pace with the latest advances in the field. My goal is to continue innovating and advancing the frontier of machine learning.</p>
+      <p>With eight years of hands-on experience as a passionate machine learning engineer, I am driven by an enduring curiosity to learn, improve, and work on the cutting edge of technology. My journey began in academia in 2013, and since then, I have contributed to impactful projects spanning deep learning, computer vision, natural language processing, and generative AI. I have worked across the entire workflow, from model development to deployment, always striving to keep pace with the latest advances...
       <div class="social">
         <a href="https://github.com/anirudh-challa" target="_blank" rel="noopener"><span class="icon" style="background:url('assets/icons/github.svg') center/contain no-repeat"></span>GitHub</a>
         <a href="https://www.linkedin.com/in/anirudhchalla2907/" target="_blank" rel="noopener"><span class="icon" style="background:url('assets/icons/linkedin.svg') center/contain no-repeat"></span>LinkedIn</a>
-        <a class="cta" href="#technologies">Technologies →</a>
       </div>
       <p class="small">Replace <code>assets/images/anirudh.jpg</code> with your photo to update the avatar.</p>
     </div>
@@ -101,40 +99,40 @@
       <div class="logo"><img src="assets/logos/d3.svg" alt="d3"></div>
       <div class="logo"><img src="assets/logos/airflow.svg" alt="airflow"></div>
     </div>
-    <p class="small">Local, license-safe placeholders are bundled. If a file is missing, we auto-fallback to Simple Icons CDN at runtime.</p>
+    <p class="small">Local, license-safe placeholders are bundled. If a file is missing, the page auto-falls back to Simple Icons CDN at runtime.</p>
   </div>
 
+  
   <div id="contact" class="container">
     <h2 class="section-title">Contact</h2>
-    <div class="grid">
-      <div class="card">
-        <div class="kicker">Email</div>
-        <h3><a href="mailto:anirudh.challa108@gmail.com" class="cta"><span class="icon" style="background:url('assets/icons/email.svg') center/contain no-repeat"></span>anirudh.challa108@gmail.com</a></h3>
-      </div>
-      <div class="card">
-        <div class="kicker">GitHub</div>
-        <p><a class="cta" href="https://github.com/anirudh-challa" target="_blank" rel="noopener"><span class="icon" style="background:url('assets/icons/github.svg') center/contain no-repeat"></span>github.com/anirudh-challa</a></p>
-      </div>
-      <div class="card">
-        <div class="kicker">LinkedIn</div>
-        <p><a class="cta" href="https://www.linkedin.com/in/anirudhchalla2907/" target="_blank" rel="noopener"><span class="icon" style="background:url('assets/icons/linkedin.svg') center/contain no-repeat"></span>linkedin.com/in/anirudhchalla2907</a></p>
-      </div>
+    <div class="contact-icons">
+      <a class="icon-btn" href="mailto:anirudh.challa108@gmail.com" aria-label="Email Anirudh">
+        <img src="assets/icons/email.svg" alt="">
+      </a>
+      <a class="icon-btn" href="https://github.com/anirudh-challa" target="_blank" rel="noopener" aria-label="Open GitHub profile">
+        <img src="assets/icons/github.svg" alt="">
+      </a>
+      <a class="icon-btn" href="https://www.linkedin.com/in/anirudhchalla2907/" target="_blank" rel="noopener" aria-label="Open LinkedIn profile">
+        <img src="assets/icons/linkedin.svg" alt="">
+      </a>
     </div>
+    <p class="contact-note">Tip: hover the icons or use keyboard focus to see the subtle animation. External links open in a new tab.</p>
     <p class="small"><a href="#top" class="cta">↑ Back to top</a></p>
   </div>
+
 
   <div class="footer">© 2025 Anirudh Challa • Built with HTML, CSS & JS • Deployed on GitHub Pages</div>
   <script src="js/scripts.js"></script>
   <script>
     // Fallback to CDN for tech logos if local file fails
-    const slugMap = {{"python":"python","numpy":"numpy","keras":"keras","pytorch":"pytorch","spacy":"spacy","tensorflow":"tensorflow","seaborn":"seaborn","matplotlib":"matplotlib","huggingface":"huggingface","pyspark":"apachespark","aws":"amazonaws","llms":"openai","computer_vision":"opencv","nlp":"nlp","kubeflow":"kubeflow","git":"git","sql":"mysql","bash":"gnu-bash","cpp":"cplusplus","d3":"d3dotjs","airflow":"apacheairflow"}};
-    const cdn = (name) => `https://cdn.simpleicons.org/${{}}`.replace("{{}}", slugMap[name] || name);
-    document.querySelectorAll('#technologies .logo img').forEach(img => {{
-      img.addEventListener('error', () => {{
+    const slugMap = {"python":"python","numpy":"numpy","keras":"keras","pytorch":"pytorch","spacy":"spacy","tensorflow":"tensorflow","seaborn":"seaborn","matplotlib":"matplotlib","huggingface":"huggingface","pyspark":"apachespark","aws":"amazonaws","llms":"openai","computer_vision":"opencv","nlp":"nlp","kubeflow":"kubeflow","git":"git","sql":"mysql","bash":"gnu-bash","cpp":"cplusplus","d3":"d3dotjs","airflow":"apacheairflow"};
+    document.querySelectorAll('#technologies .logo img').forEach(img => {
+      img.addEventListener('error', () => {
         const name = img.getAttribute('alt');
-        img.src = cdn(name);
-      }});
-    }});
+        const slug = slugMap[name] || name;
+        img.src = `https://cdn.simpleicons.org/${slug}`.replace("{slug}", slug);
+      });
+    });
   </script>
 </body>
 </html>
